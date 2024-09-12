@@ -20,8 +20,20 @@ jobs:
           python-version: 3.9
 
 
-      - name: Build app
+      - name: auto
         run: |
           python --version
           pip --version
+
+      - name: bash
+        run: |
+          python --version
+          pip --version
+        shell: bash
+
+      - name: cmd
+        run: |
+          python --version
+          pip --version
+        shell: cmd
 
