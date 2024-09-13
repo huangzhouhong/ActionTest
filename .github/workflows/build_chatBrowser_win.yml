@@ -14,28 +14,11 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      # default shell(ps) works fine. cmd or bash need additional setting
-      - uses: conda-incubator/setup-miniconda@v3
-        with:
-          activate-environment: browser
-          python-version: 3.9
-
 
       - name: auto
         run: |
-          python --version
-          pip --version
-          ./a.bat
-
-      - name: bash
-        run: |
-          python --version
-          pip --version
-        shell: bash
-
-      - name: cmd
-        run: |
-          python --version
-          pip --version
+          call C:\Miniconda\Scripts\activate.bat
         shell: cmd
+
+
 
