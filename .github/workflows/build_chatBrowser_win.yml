@@ -17,8 +17,7 @@ jobs:
 
       - name: auto
         run: |
-          call C:\Miniconda\Scripts\activate.bat
-        shell: cmd
+          ./a.bat
 
 
 
