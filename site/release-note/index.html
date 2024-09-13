@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>更新日志 - chatBrowser</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/font-awesome.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="..">chatBrowser</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem">
+                                <a href=".." class="nav-link">用户指南</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="../QA/" class="nav-link">常见问题</a>
+                            </li>
+                            <li class="navitem active">
+                                <a href="./" class="nav-link">更新日志</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href="../QA/" class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" class="nav-link disabled">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#chatbrowser" class="nav-link">ChatBrowser更新日志</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#20240913v17" class="nav-link">20240913：安卓V17发布</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#20240913v18-for-windows" class="nav-link">20240913：V18 for Windows发布</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#20240912v18-for-macos" class="nav-link">20240912：V18 for macOS发布</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#20240806v16" class="nav-link">20240806：安卓V16发布</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#20240723v15" class="nav-link">20240723：安卓V15发布</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#20240723v17-for-macoswindows" class="nav-link">20240723：V17 for macOS、Windows发布！</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#20240701v16-for-macoswindows" class="nav-link">20240701：V16 for macOS、Windows发布！</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#20240701v14" class="nav-link">20240701：安卓V14发布</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#20240627v15-for-macoswindows" class="nav-link">20240627：V15 for macOS、Windows发布！</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#20240624v13" class="nav-link">20240624：安卓V13发布</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#20240620v12" class="nav-link">20240620：安卓V12发布</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#20240617v11" class="nav-link">20240617：安卓V11发布</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#20240609v10" class="nav-link">20240609：安卓V10发布</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#20240513v9" class="nav-link">20240513：安卓V9发布</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#20240511v8" class="nav-link">20240511：安卓V8发布</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#20240510v7" class="nav-link">20240510：安卓V7发布</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#20231119v6" class="nav-link">20231119：安卓V6发布</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#20231119v5" class="nav-link">20231119：安卓V5发布</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#20231106v4" class="nav-link">20231106：安卓V4发布</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#20231027v3" class="nav-link">20231027：安卓V3发布</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#20231027v14-for-macoswindows" class="nav-link">20231027：V14 for macOS、Windows发布！</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#20231019v2" class="nav-link">20231019：安卓V2发布</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#20231019v13-for-macoswindows" class="nav-link">20231019：V13 for macOS、Windows发布！</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#20231016v12-for-macoswindows" class="nav-link">20231016：V12 for macOS、Windows发布！</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#20231012v1" class="nav-link">20231012：安卓V1发布！</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#v10" class="nav-link">V10</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#v9" class="nav-link">V9</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#v8" class="nav-link">V8</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#v7" class="nav-link">V7</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#v6" class="nav-link">V6</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="chatbrowser">ChatBrowser更新日志</h1>
+<h2 id="20240913v17">20240913：安卓V17发布</h2>
+<p><strong>下载地址</strong></p>
+<p><a href="https://chatbrowser.oss-cn-beijing.aliyuncs.com/dist/android/ChatBrowser_v17.apk">下载地址</a></p>
+<p><strong>升级说明</strong></p>
+<ul>
+<li>优化节点选择算法</li>
+</ul>
+<hr />
+<h2 id="20240913v18-for-windows">20240913：V18 for Windows发布</h2>
+<p><strong>下载地址</strong></p>
+<p><a href="https://chatbrowser.oss-cn-beijing.aliyuncs.com/dist/win/ChatBrowser-installer-v18.exe">下载地址</a></p>
+<p><strong>升级说明</strong></p>
+<ul>
+<li>优化节点选择算法</li>
+</ul>
+<hr />
+<h2 id="20240912v18-for-macos">20240912：V18 for macOS发布</h2>
+<p><strong>下载地址</strong></p>
+<p><a href="https://chatbrowser.oss-cn-beijing.aliyuncs.com/dist/macOS/ChatBrowser_x86_64_V18.dmg">下载适用于 Intel CPU 的版本</a></p>
+<p><a href="https://chatbrowser.oss-cn-beijing.aliyuncs.com/dist/macOS/ChatBrowser_arm64_V18.dmg">下载适用于 M 系列 (Apple Silicon) 的版本</a></p>
+<p><strong>注意：目前macOS版本多网卡环境存在问题。如果同时使用USB网卡和内置网卡，可能出现无法启用（小飞机不变成绿色）</strong></p>
+<p><strong>升级说明</strong></p>
+<ul>
+<li>适配M系列，现在M系列不需要通过Rosetta兼容，启动速度更快，性能更好</li>
+<li>优化节点选择算法</li>
+</ul>
+<hr />
+<h2 id="20240806v16">20240806：安卓V16发布</h2>
+<p><strong>下载地址</strong></p>
+<p><a href="https://chatbrowser.oss-cn-beijing.aliyuncs.com/dist/android/ChatBrowser_v16.apk">下载地址</a></p>
+<p><strong>升级说明</strong></p>
+<ul>
+<li>fix bug</li>
+</ul>
+<hr />
+<h2 id="20240723v15">20240723：安卓V15发布</h2>
+<p><strong>下载地址</strong></p>
+<p><a href="https://chatbrowser.oss-cn-beijing.aliyuncs.com/dist/android/ChatBrowser_v15.apk">下载地址</a></p>
+<p><strong>升级说明</strong></p>
+<ul>
+<li>支持chatGPT官方app，现在从google play下载可直接使用。</li>
+</ul>
+<hr />
+<h2 id="20240723v17-for-macoswindows">20240723：V17 for macOS、Windows发布！</h2>
+<p><strong>下载地址</strong></p>
+<p><a href="https://share.weiyun.com/1kWAYy0O">Windows下载地址</a></p>
+<p><a href="../mac-install/">macOS命令安装</a>（推荐方法，需要你的电脑已安装curl和wget）</p>
+<p><a href="https://share.weiyun.com/HfsnQuCO">macOS dmg下载地址</a>。如果出现文件损坏错误，参考<a href="../mac-dmg-bad/">指引</a></p>
+<p><strong>注意：目前macOS版本多网卡环境存在问题，如果出现无法启用（小飞机不变成绿色），请拔掉USB网卡，或手动停用内置WIFI。</strong></p>
+<p><strong>升级说明</strong></p>
+<ul>
+<li>chatGPT 移除流量限制</li>
+</ul>
+<hr />
+<h2 id="20240701v16-for-macoswindows">20240701：V16 for macOS、Windows发布！</h2>
+<p><strong>下载地址</strong></p>
+<p><a href="https://share.weiyun.com/VHlJpvHw">Windows下载地址</a></p>
+<p><a href="../mac-install/">macOS命令安装</a>（推荐方法，需要你的电脑已安装curl和wget）</p>
+<p><a href="https://share.weiyun.com/jHaN9ub5">macOS dmg下载地址</a>。如果出现文件损坏错误，参考<a href="../mac-dmg-bad/">指引</a></p>
+<p><strong>注意：目前macOS版本多网卡环境存在问题，如果出现无法启用（小飞机不变成绿色），请拔掉USB网卡，或手动停用内置WIFI。</strong></p>
+<p><strong>升级说明</strong></p>
+<ul>
+<li>更换设备</li>
+</ul>
+<hr />
+<h2 id="20240701v14">20240701：安卓V14发布</h2>
+<p><strong>下载地址</strong></p>
+<p><a href="https://chatbrowser.oss-cn-beijing.aliyuncs.com/dist/android/ChatBrowser_v14.apk">下载地址</a></p>
+<p><strong>升级说明</strong></p>
+<ul>
+<li>更换设备</li>
+</ul>
+<hr />
+<h2 id="20240627v15-for-macoswindows">20240627：V15 for macOS、Windows发布！</h2>
+<p><strong>下载地址</strong></p>
+<p><a href="https://share.weiyun.com/1ANXJspz">Windows下载地址</a></p>
+<p><a href="../mac-install/">macOS命令安装</a>（推荐方法，需要你的电脑已安装curl和wget）</p>
+<p><a href="https://share.weiyun.com/YY8MBig9">macOS dmg下载地址</a>。如果出现文件损坏错误，参考<a href="../mac-dmg-bad/">指引</a></p>
+<p><strong>注意：目前macOS版本多网卡环境存在问题，如果出现无法启用（小飞机不变成绿色），请拔掉USB网卡，或手动停用内置WIFI。</strong></p>
+<p><strong>升级说明</strong></p>
+<ul>
+<li>fix bug</li>
+</ul>
+<hr />
+<h2 id="20240624v13">20240624：安卓V13发布</h2>
+<p><strong>下载地址</strong></p>
+<p><a href="https://chatbrowser.oss-cn-beijing.aliyuncs.com/dist/android/ChatBrowser_v13.apk">下载地址</a></p>
+<p><strong>升级说明</strong></p>
+<ul>
+<li>支持微信支付</li>
+</ul>
+<hr />
+<h2 id="20240620v12">20240620：安卓V12发布</h2>
+<p><strong>下载地址</strong></p>
+<p><a href="https://chatbrowser.oss-cn-beijing.aliyuncs.com/dist/android/ChatBrowser_v12.apk">下载地址</a></p>
+<p><strong>升级说明</strong></p>
+<ul>
+<li>连接优化</li>
+</ul>
+<hr />
+<h2 id="20240617v11">20240617：安卓V11发布</h2>
+<p><strong>下载地址</strong></p>
+<p>已删除</p>
+<p><strong>升级说明</strong></p>
+<ul>
+<li>修复bug：连接过程中，app切换到后台可能导致连接失败</li>
+</ul>
+<hr />
+<h2 id="20240609v10">20240609：安卓V10发布</h2>
+<p><strong>下载地址</strong></p>
+<p>已删除</p>
+<p><strong>升级说明</strong></p>
+<ul>
+<li>性能优化</li>
+<li>规则更全面</li>
+</ul>
+<hr />
+<h2 id="20240513v9">20240513：安卓V9发布</h2>
+<p><strong>下载地址</strong></p>
+<p><a href="https://chatbrowser.oss-cn-beijing.aliyuncs.com/dist/android/ChatBrowser_v9.apk">下载地址</a></p>
+<p><strong>升级说明</strong></p>
+<ul>
+<li>fix ipv6环境问题</li>
+</ul>
+<hr />
+<h2 id="20240511v8">20240511：安卓V8发布</h2>
+<p><strong>下载地址</strong></p>
+<p><a href="https://chatbrowser.oss-cn-beijing.aliyuncs.com/dist/android/ChatBrowser_v8.apk">下载地址</a></p>
+<p><strong>升级说明</strong></p>
+<ul>
+<li>Fix bug</li>
+</ul>
+<hr />
+<h2 id="20240510v7">20240510：安卓V7发布</h2>
+<p><strong>下载地址</strong></p>
+<p><a href="https://chatbrowser.oss-cn-beijing.aliyuncs.com/dist/android/ChatBrowser_v7.apk">下载地址</a></p>
+<p><strong>升级说明</strong></p>
+<ul>
+<li>升级算法，提升稳定性</li>
+</ul>
+<hr />
+<h2 id="20231119v6">20231119：安卓V6发布</h2>
+<p><strong>下载地址</strong></p>
+<p><a href="https://chatbrowser.oss-cn-beijing.aliyuncs.com/dist/android/ChatBrowser_v6.apk">下载地址</a></p>
+<p><strong>升级说明</strong></p>
+<ul>
+<li>移动端升级支持淘宝购买。</li>
+<li>一些小改进</li>
+</ul>
+<hr />
+<h2 id="20231119v5">20231119：安卓V5发布</h2>
+<p><strong>下载地址</strong></p>
+<p><a href="https://chatbrowser.oss-cn-beijing.aliyuncs.com/dist/android/ChatBrowser_v5.apk">下载地址</a></p>
+<p><strong>升级说明</strong></p>
+<ul>
+<li>升级规则，覆盖更多使用场景</li>
+</ul>
+<hr />
+<h2 id="20231106v4">20231106：安卓V4发布</h2>
+<p><strong>下载地址</strong></p>
+<p><a href="https://chatbrowser.oss-cn-beijing.aliyuncs.com/dist/android/ChatBrowser_v4.apk">下载地址</a></p>
+<p><strong>升级说明</strong></p>
+<ul>
+<li>增加广告拦截功能。既提升页面加载速度，又减少广告干扰。</li>
+</ul>
+<hr />
+<h2 id="20231027v3">20231027：安卓V3发布</h2>
+<p><strong>下载地址</strong></p>
+<p><a href="https://chatbrowser.oss-cn-beijing.aliyuncs.com/dist/android/ChatBrowser_v3.apk">下载地址</a></p>
+<p><strong>升级说明</strong></p>
+<ul>
+<li>支持自定义规则</li>
+</ul>
+<hr />
+<h2 id="20231027v14-for-macoswindows">20231027：V14 for macOS、Windows发布！</h2>
+<p><strong>下载地址</strong></p>
+<p><a href="https://share.weiyun.com/bgqXCkJ3">Windows下载地址</a></p>
+<p><a href="../mac-install/">macOS命令安装</a>（推荐方法，需要你的电脑已安装curl和wget）</p>
+<p><a href="https://share.weiyun.com/sOn73qIw">macOS dmg下载地址</a>。如果出现文件损坏错误，参考<a href="../mac-dmg-bad/">指引</a></p>
+<p><strong>注意：目前macOS版本多网卡环境存在问题，如果出现无法启用（小飞机不变成绿色），请拔掉USB网卡，或手动停用内置WIFI。</strong></p>
+<p><strong>升级说明</strong></p>
+<ul>
+<li>支持切换账号</li>
+<li>fix bug</li>
+</ul>
+<hr />
+<h2 id="20231019v2">20231019：安卓V2发布</h2>
+<p><strong>下载地址</strong></p>
+<p><a href="https://chatbrowser.oss-cn-beijing.aliyuncs.com/dist/android/ChatBrowser_v2.apk">下载地址</a></p>
+<p><strong>升级说明</strong></p>
+<ul>
+<li>优化连接</li>
+<li>修复ipv6环境存在的bug</li>
+<li>优化规则更新</li>
+</ul>
+<hr />
+<h2 id="20231019v13-for-macoswindows">20231019：V13 for macOS、Windows发布！</h2>
+<p><strong>下载地址</strong></p>
+<p><a href="https://share.weiyun.com/s9vhJGJu">Windows下载地址</a></p>
+<p><a href="../mac-install/">macOS命令安装</a></p>
+<p><a href="https://share.weiyun.com/tpP1GcdY">macOS dmg下载地址</a>。如果出现文件损坏错误，参考<a href="../mac-dmg-bad/">指引</a></p>
+<p><strong>升级说明</strong></p>
+<ul>
+<li>优化连接</li>
+<li>pac模式不直观的问题</li>
+<li>fix更新规则和用户规则可能不生效的bug</li>
+</ul>
+<hr />
+<h2 id="20231016v12-for-macoswindows">20231016：V12 for macOS、Windows发布！</h2>
+<p><strong>下载地址</strong></p>
+<p><a href="../mac-install/">macOS安装</a></p>
+<p><a href="https://share.weiyun.com/XQ6YdZQW">Windows下载地址</a></p>
+<p><strong>升级说明</strong></p>
+<ul>
+<li>优化节点选择算法，速度更快</li>
+<li>fix谷歌搜索需要登录问题</li>
+<li>fix 用户自定义规则不生效的问题</li>
+</ul>
+<hr />
+<h2 id="20231012v1">20231012：安卓V1发布！</h2>
+<p><a href="https://chatbrowser.oss-cn-beijing.aliyuncs.com/dist/android/ChatBrowser_v1.apk">下载地址</a></p>
+<hr />
+<h2 id="v10">V10</h2>
+<p><strong>下载地址</strong></p>
+<p><a href="../mac-install/">macOS安装</a></p>
+<p><a href="https://share.weiyun.com/JBIWNVvi">Windows下载地址</a></p>
+<p><strong>升级说明</strong></p>
+<ul>
+<li>速度大幅提升</li>
+<li>支持电报：用法<a href="../QA/">参考QA</a></li>
+<li>Fix谷歌429问题</li>
+</ul>
+<h2 id="v9">V9</h2>
+<p><strong>下载地址</strong></p>
+<p><a href="../mac-install/">macOS安装</a></p>
+<p><a href="https://share.weiyun.com/Zf3Z3fHw">Windows下载地址</a></p>
+<p>注：Windows安装过程或使用如有问题，请关闭360后重试，或添加信任。其他杀毒软件不会报毒，请放心使用。</p>
+<h2 id="v8">V8</h2>
+<p><strong>下载地址</strong></p>
+<p><a href="https://share.weiyun.com/hI9TfEpi">macOS下载地址</a></p>
+<p><a href="https://share.weiyun.com/4Q8sTWw9">Windows下载地址</a></p>
+<p>注：Windows安装过程或使用如有问题，请关闭360后重试，或添加信任。其他杀毒软件不会报毒，请放心使用。</p>
+<p><strong>升级说明</strong></p>
+<ul>
+<li>每月免费流量</li>
+<li>邀请送流量</li>
+<li>流量包购买</li>
+</ul>
+<h2 id="v7">V7</h2>
+<p><strong>下载地址</strong>
+<a href="https://share.weiyun.com/EKbkJdsu">macOS下载地址</a></p>
+<p><a href="https://share.weiyun.com/Wc8WKzou">Windows下载地址</a></p>
+<p>注：Windows安装过程或使用如有问题，请关闭360后重试，或添加信任。其他杀毒软件不会报毒，请放心使用。</p>
+<p><strong>升级说明</strong></p>
+<ul>
+<li>使用Chrome代替内置浏览器，避免被识别为机器人</li>
+<li>修复一些bug</li>
+</ul>
+<h2 id="v6">V6</h2>
+<p><strong>下载地址</strong>
+<a href="https://share.weiyun.com/FUbGQRmf">macOS下载地址</a></p>
+<p><a href="https://share.weiyun.com/4UtRxLnJ">Windows下载地址</a></p>
+<p>注：Windows安装过程或使用如有问题，请关闭360后重试，或添加信任。其他杀毒软件不会报毒，请放心使用。</p>
+<p><strong>升级说明</strong></p>
+<ul>
+<li>联系我</li>
+<li>邀请码</li>
+<li>兑换码</li>
+<li>登录引导</li>
+<li>分享无法复制的bug</li>
+<li>修复翻译问题</li>
+</ul></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../js/jquery-3.6.0.min.js"></script>
+        <script src="../js/bootstrap.min.js"></script>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js"></script>
+        <script src="../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

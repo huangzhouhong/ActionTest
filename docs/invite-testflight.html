@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ChatBrowser Invite</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            text-align: left;
+        }
+
+
+        .button {
+            margin-top: 20px;
+            margin-bottom: 20px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .button:disabled {
+            background-color: #ccc;
+            cursor: not-allowed;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+        }
+
+        p {
+            color: #303030;
+        }
+
+        .icon-text span {
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <p style="font-weight: bold;font-size: 20px">已发送邀请邮件</p>
+    <p>按以下操作接受邀请：</p>
+    <p>前往邮箱打开邮件</p>
+
+    <img src="imgs/testflight/connect-invite.png"/>
+    <p>使用apple id 登录（网址是apple.com，可以放心登录）</p>
+    <img src="imgs/testflight/connect-login.png"/>
+    <p>
+        <span>完成登录后点击：</span>
+        <button class="button" id="submitButton">我已完成操作</button>
+        <span id="pleaseWaitMessage" style="display: none;">请稍候...</span>
+    </p>
+
+</div>
+
+<script>
+    function getUrlParameter(name) {
+        name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+        var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+        var results = regex.exec(location.search);
+        return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+    }
+
+    document.getElementById("submitButton").addEventListener("click", function () {
+        var emailValue = getUrlParameter('email');
+        console.log(emailValue);
+        var button = this;
+        button.disabled = true;
+        document.getElementById("pleaseWaitMessage").style.display = "inline";
+        fetch("https://api-https.chatbrowser.top/invite-testflight", {
+            method: "POST",
+            body: JSON.stringify({email: emailValue}),
+            headers: {
+                "Content-Type": "application/json"
+            }
+        }).then(response => {
+            if (response.ok) {
+                return response.json();
+            } else {
+                throw new Error('Status code: ' + response.status);
+            }
+        }).then(data => {
+            if (data.exist) {
+                window.location.href = "/invite-testflight-success.html";
+            } else {
+                alert('似乎还没接受邀请，请按上面步骤操作');
+            }
+        }).catch(error => {
+            console.error('Error:', error.message);
+            alert('错误: ' + error.message);
+            // Re-enable the button in case of error
+
+        }).finally(() => {
+            button.disabled = false;
+            document.getElementById("pleaseWaitMessage").style.display = "none";
+        });
+    });
+</script>
+
+</body>
+</html>

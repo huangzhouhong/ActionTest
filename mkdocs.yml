@@ -1,0 +1,10 @@
+site_name: chatBrowser
+nav:
+  - 用户指南: index.md
+  - 常见问题: QA.md
+  - 更新日志: release-note.md
+
+
+
+
+
